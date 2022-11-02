@@ -1,0 +1,10 @@
+:root {
+    --text-font: 3.5rem;
+}
+
+article.container {
+    top: 30%;
+    left: 8%;
+    width: 500px;
+    padding-left: 120px;
+}

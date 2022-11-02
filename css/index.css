@@ -5,12 +5,17 @@
     --minute-color: #ffd500;
     --second-color: #941b0c;
     --millisecond-color: #03045e;
-    --text-font: 4.8rem;
+    --text-font: 4.5rem;
 }
 
 body {
     background-color: var(--primary-color);
     font-size: var(--text-font);
+}
+
+.logo {
+    width: 100px;
+    height: 86px;
 }
 
 h3  {
@@ -21,7 +26,7 @@ h3  {
 
 article.container {
     position: absolute;
-    top: 30%;
+    top: 47%;
     left: 15%;
     border: 2px double #000000;
     padding: 20px;
@@ -54,4 +59,8 @@ div.button>button {
     background-color: var(--primary-color);
     border-radius: 30%;
     padding: 10px;
+}
+
+div.button {
+    padding-left: 50px;
 }
