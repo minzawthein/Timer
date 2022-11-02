@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #f6fff8;
+    --secondary-color: #000000;
+    --hour-color: #70e000;
+    --minute-color: #ffd500;
+    --second-color: #941b0c;
+    --millisecond-color: #03045e;
+    --text-font: 4.8rem;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: var(--text-font);
+}
+
+h3  {
+    text-align: center;
+    font-family: cursive;
+    color: #003049;
+}
+
+article.container {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    border: 2px double #000000;
+    padding: 20px;
+    filter: drop-shadow(0 0.3em 0.75rem rgba(0, 0, 0, 0.3));
+    width: 700px;
+    padding-left: 300px;
+}
+
+div.display {
+    margin-bottom: .7em;
+}
+
+span.hour {
+    color: var(--hour-color);
+}
+
+span.minute {
+    color: var(--minute-color);
+}
+
+span.second {
+    color: var(--second-color);
+}
+
+span.millisecond {
+    color: var(--millisecond-color);
+}
+
+div.button>button {
+    background-color: var(--primary-color);
+    border-radius: 30%;
+    padding: 10px;
+}
