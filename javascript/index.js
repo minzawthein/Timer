@@ -1,5 +1,5 @@
 (function() {
-    var hours = document.getElementsByClassName('hour')[0],
+    let hours = document.getElementsByClassName('hour')[0],
         minutes = document.getElementsByClassName('minute')[0],
         seconds = document.getElementsByClassName('second')[0],
         milliseconds = document.getElementsByClassName('millisecond')[0],
@@ -13,9 +13,9 @@
         second = 00,
         millisecond = 00;
 
-    startTime.addEventListener('click', function() {
+    startTime.addEventListener('click', () => {
         clearInterval(interval);
-        interval = setInterval(function(){
+        interval = setInterval(() =>{
             millisecond = new Date().getMilliseconds();
             if(millisecond < 1000) {
                 millisecond ++;
@@ -50,11 +50,11 @@
         },1000/800);
     },false);
 
-    pauseTime.addEventListener('click', function() {
+    pauseTime.addEventListener('click', () => {
         clearInterval(interval);
     })
 
-    resetTime.addEventListener('click', function() {
+    resetTime.addEventListener('click', () => {
         clearInterval(interval);
         millisecond=00;
           second= 00;
